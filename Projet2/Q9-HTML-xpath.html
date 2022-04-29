@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q10b-HTML.css">
+    <title>XPATH</title>
+</head>
+<body>
+    <header class="topbar">
+        <nav>
+            <a href="Q9-HTML-index.html" target="blank">Acceuil</a>
+            <a href="Q9-HTML-xmldtd.html" target="blank">XML</a>
+            <a href="Q9-HTML-partie1.html" target="blank">A propos</a>
+            <a href="img/dtd.JPG" target="blank">DTD</a>
+        </nav>
+        
+    </header>
+
+    <div class="banniere"></div>
+    <h1> Requêtes X-PATH et Resultats:</h1>
+       
+<ol>
+       
+<li> <strong>a) les contenus des éléments &lt;documentation&gt;: </strong>
+       
+<ul>
+       
+<li>//documentation//text()</li>
+<li><a href="img/result_a.PNG">voir le resultat en image</a></li></ul> 
+       
+</li>
+       
+       
+ 
+<li> <strong>b)  le premier élément &lt;documentation&gt;: </strong>
+       
+<ul>
+       
+<li>cinemas/documentation[1]</li>
+<li><a href="img/result_b.PNG">voir le resultat en image</a></li></ul> 
+       
+</li>
+       
+       
+ 
+<li> <strong>c) les éléments &lt;documentation&gt; n’ayant pas
+d’élément &lt;lien&gt;
+: </strong>
+       
+<ul>
+       
+<li>//documentation[count(./lien)&lt;1]</li>
+<li><a href="img/result_c.PNG">voir le resultat en image</a>
+<p><em>NB: vu que tout nos balises documentation ont des elements lien, nous avons enlever un element lien pour tester notre requête. Et finalement on a bel bien le resultat souhaiter avec la premiere documentation ;)</em></p></li></ul> 
+       
+</li>
+       
+       
+ 
+<li> <strong>d) les valeurs des attributs href: </strong>
+       
+<ul>
+       
+<li>html//@href</li>
+<li><a href="img/resultat_d.PNG">voir le resultat en image</a></li></ul> 
+       
+</li>
+       
+       
+ 
+<li> <strong>e) compter le nombre d’images dans un document XHTML: </strong>
+       
+<ul>
+       
+<li>count(//img)</li>
+<li><a href="img/result_e2.PNG">voir le resultat en image</a>
+    <p><em>NB: Normalement on a 4 images dans le site en visuel mais
+        dans notre code html on en a que 3 car nous avons utiliser une autre methode pour faire
+        apparaître la toute première image(image cinema) à travers le css ;) </em></p></li></ul> 
+       
+</li>
+       
+</ol>
+<footer class="footer">Université de Rennes 1 Campus Beaulieu</footer>
+</body>
+</html>

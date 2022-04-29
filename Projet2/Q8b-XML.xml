@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="Q10a-XML.css" type="text/css"?>
+<!DOCTYPE cinemas SYSTEM "Q7-DTD.dtd">
+<cinemas>
+	<documentation date="12/04/2022" auteur="chaimae">ce xml traduit la requete tous les films projettés dans les salles des cinemas, on a utiliser des informations du site: <lien>https://www.cinemaspathegaumont.com/cinemas/cinema-gaumont-rennes
+</lien>
+	</documentation>
+	<cinéma adresse="place de bretagne">
+		<nom>GAUMONT</nom>
+		<salle numero="s20" nbrPlace="50">
+		
+			<film dateSortie="2021" durée="2h" catégorie="fantaisie">
+				<nom>Spiderman: no way home</nom>
+				<acteur nom="Tom Holland">Acteur principal du film: Tom Holland</acteur>
+				<producteur nom="Jhon connor"> Producteur: Jhon connor </producteur>
+				<description>Pour la première fois dans son histoire cinématographique, Spider-Man, le héros sympa du quartier est démasqué et ne peut désormais plus séparer sa vie normale de ses lourdes responsabilités de super-héros. Quand il demande de l'aide à Doctor Strange, les enjeux deviennent encore plus dangereux, le forçant à découvrir ce qu'être Spider-Man signifie véritablement.</description>
+			</film>
+			<documentation date="13/04/2022" auteur="ibrahim">dans cette salle le film de spiderman est projetté la description à été copié du site: <lien>https://www.allocine.fr/film/fichefilm_gen_cfilm=256880.html</lien>
+			</documentation>
+		</salle>
+	</cinéma>
+	<cinéma adresse="Rue de Châtillon">
+		<nom>ARVOR</nom>
+		<salle numero="S42" nbrPlace="60">
+			<film dateSortie="2007" durée="2h" catégorie="fantaisie">
+				<nom>Barbie et les douzes princesses</nom>
+				<acteur nom="Barbie1">princesse1: Courtney</acteur>
+				<acteur nom="Barbie2">princesse2: Guenièvre</acteur>
+				<description>Dans le château de leur père, la princesse Geneviève (Barbie) et ses onze sœurs, l'aînée Ashlyn (musicienne), Blair (jockey), Courtney (grande lectrice), Delia et Edeline (sportives), Fallon (romantique), les jumelles Hadley et Isla (échassières) et les triplés et cadettes Janessa, Kathleen et Lacey (entomologistes) vivent dans la joie et l’insouciance. Mais le roi, qui est veuf, fait venir sa cousine, la duchesse Rowena, auprès de lui afin qu’elle prenne en charge l’éducation des princesses. Elles doivent bientôt renoncer à tout ce qui leur faisait plaisir, comme le chant, le croquet mais surtout la danse. C’est alors que leur père tombe malade, et l’avenir leur paraît de plus en plus sombre. </description>
+			</film>
+			<documentation date="14/04/2022" auteur="Ibrahim">dans cette salle le film de barbie est projetté la description à été copié du site: <lien>https://fr.wikipedia.org/wiki/Barbie_au_bal_des_douze_princesses</lien>
+			</documentation>
+		</salle>
+	</cinéma>
+</cinemas>

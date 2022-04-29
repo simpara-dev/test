@@ -1,0 +1,22 @@
+<!ELEMENT cinemas ( documentation, cinéma+)>
+<!ELEMENT documentation (#PCDATA|lien)*>
+<!ELEMENT cinéma ( nom,salle+)>
+
+<!ATTLIST documentation date CDATA #IMPLIED
+                        auteur CDATA #IMPLIED>
+<!ELEMENT lien (#PCDATA)>
+<!ATTLIST cinéma adresse CDATA #REQUIRED>
+<!ELEMENT salle (film?,documentation*)>
+<!ATTLIST salle numero ID #REQUIRED
+                nbrPlace CDATA #IMPLIED>
+<!ELEMENT film (nom, acteur+, producteur?, description)>
+<!ATTLIST film dateSortie CDATA #IMPLIED
+               durée CDATA #IMPLIED
+               catégorie CDATA #REQUIRED>
+<!ELEMENT acteur (#PCDATA)>
+<!ATTLIST acteur nom CDATA #REQUIRED
+	         salaire CDATA #IMPLIED>
+<!ELEMENT producteur (#PCDATA)>
+<!ATTLIST producteur nom CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
